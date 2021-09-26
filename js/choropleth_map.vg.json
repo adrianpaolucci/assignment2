@@ -15,7 +15,7 @@
           "url": "https://adrianpaolucci.github.io/assignment2/data/forestation.csv"
         },
         "key": "Country",
-        "fields": ["Forestation"]
+        "fields": ["Emissions"]
       }
     }
   ],
@@ -23,14 +23,14 @@
   "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
-      "field": "Forestation",
+      "field": "Emissions",
       "title": "% Forestation",
       "type": "quantitative",
       "scale": {"type": "linear", "range": ["#0000", "green"]}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
-      {"field": "Forestation", "type": "quantitative"}
+      {"field": "Emissions", "type": "quantitative"}
     ]
   }
 }

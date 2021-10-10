@@ -1,9 +1,10 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {"url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/linedata.csv"},
     "title": "CO2 emissions over time by Continents",
   "width": 800,
   "height": 500,
+  "explain": "hello this is a test",
   "params": [
  {
  "name": "Continent_selection",
@@ -52,8 +53,10 @@
         {    "mark": {
     "type": "line",
     "clip": true
-  }
-},
+        }
+      },
+     
+
         {"transform": [{"filter": {"selection": "hover"}}], "mark": "point"}
       ]
     },
@@ -77,7 +80,26 @@
           {"field": "North America", "type": "quantitative"},
           {"field": "South America", "type": "quantitative"},
           {"field": "Oceania", "type": "quantitative"}
-        ]
+        ]},
+        "mark": {
+ "type": "text",
+ "align": "right",
+ "baseline": "middle",
+ "dx": -12,
+ "fontSize": 11.5,
+ "fontStyle": "italic"
+ },
+    "encoding": {
+ "text": {"field": "Year", "type": "nominal"},
+ "color": {"value": "black"},
+ "opacity": {
+ "condition": {
+ "test": "datum['Year'] == '1992'",
+ "value": 1
+ },
+ "value": 0
+ }
+
       },
       "selection": {
         "hover": {
@@ -90,6 +112,6 @@
         }
 
       }
-    }
+      }
   ]
 }

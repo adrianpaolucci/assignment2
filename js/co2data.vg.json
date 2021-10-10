@@ -4,11 +4,47 @@
     "title": "CO2 emissions over time by Continents",
   "width": 800,
   "height": 500,
-  "encoding": {"x": {"field": "Year", "type": "quantitative",
-    "scale":{"domain" : [1900,2018]}}},
+  "params": [
+ {
+ "name": "Continent_selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "North America",
+ "South America",
+ "Europe",
+ "Africa",
+ "Asia",
+ "Oceania"
+ ],
+ "labels":[
+ "Show All",
+ "North America",
+ "South America",
+ "Europe",
+ "Africa",
+ "Asia",
+ "Oceania"
+ ],
+ "name": "Continent Selection: "
+ }
+ }
+ ],
+ "transform": [{"filter": "Continent_selection == null || datum.Entity == Continent_selection"}],
+  "encoding": {
+    "x": {
+      "field": "Year", 
+      "type": "quantitative",
+    "scale":{
+      "domain" : [1900,2018]
+        }
+      }
+    },
   "layer": [
     {
       "encoding": {
+       
         "color": {"field": "Entity", "type": "nominal"},
         "y": {"field": "Annual CO2 emissions", "type": "quantitative"}
       },
@@ -16,7 +52,8 @@
         {    "mark": {
     "type": "line",
     "clip": true
-  }},
+  }
+},
         {"transform": [{"filter": {"selection": "hover"}}], "mark": "point"}
       ]
     },
@@ -24,10 +61,14 @@
       "transform": [{"pivot": "Entity", "value": "Annual CO2 emissions", "groupby": ["Year"]}],
       "mark": {"type":"rule","clip":true},
       "encoding": {
+       
         "opacity": {
-          "condition": {"value": 0.3, "selection": "hover"},
+          "condition": {"selection": "hover", "value": 0.1},
           "value": 0
         },
+      
+        "size": {"legend": {"format": ".1s"}},
+        
         "tooltip": [
           {"field": "Year", "type": "quantitative"},
           {"field": "Asia", "type": "quantitative"},
@@ -47,6 +88,7 @@
           "empty": "none",
           "clear": "mouseout"
         }
+
       }
     }
   ]

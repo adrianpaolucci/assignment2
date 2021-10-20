@@ -41,12 +41,23 @@
  ],
  "name": "Continent Selection: "
  }
+ },
+ {"name": "Population_min",
+ "value": 0,
+ "bind": {
+ "input": "range",
+ "min": 0,
+ "max": 250000000,
+ "step": 1000000,
+ "name": "Minimum Population: "
+ }
  }
  ],
 
   "transform": [
       {"filter": "datum.population > 20000000"},
-      {"filter": "Continent_selection == null || datum.Continent == Continent_selection"}
+      {"filter": "Continent_selection == null || datum.Continent == Continent_selection"},
+      {"filter": "datum.population > Population_min"}
   ],
   "encoding": {
     "x": {
@@ -69,7 +80,28 @@
         "tickCount": 5
       }
     },
-    "color": {"field": "Continent", "type": "nominal"},
+    "color": {
+ "field": "Continent",
+ "type": "nominal",
+ "scale": {
+ "domain": [
+ "North America",
+ "South America",
+ "Europe",
+ "Africa",
+ "Asia",
+ "Oceania"
+ ],
+ "range": [
+ "#e41a1c",
+ "#984ea3",
+ "#ff7f00",
+ "#a6cee3",
+ "#377eb8",
+ "#a65628"
+ ]
+ }
+ },
     "opacity": {"value": 0.5},
     "size": {"field": "population", "type": "quantitative",
     "scale": {

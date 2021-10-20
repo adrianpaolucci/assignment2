@@ -12,7 +12,7 @@ Asia,1970,0.00
 Asia,1980,0.60
 Asia,1990,0.20
 Asia,2000,0.30
-Asia,2010,-0.40
+Asia,2010,0.40
 North America,1950,-0.50
 North America,1960,-0.20
 North America,1970,0.50
@@ -26,7 +26,7 @@ Africa,1970,0.30
 Africa,1980,0.10
 Africa,1990,0.40
 Africa,2000,0.40
-Africa,2010,-0.20
+Africa,2010,0.40
 Australia,1950,0.00
 Australia,1960,0.10
 Australia,1970,0.20

@@ -15,6 +15,12 @@
       }
   },
   "mark": "rect",
+   "config": {
+    "background": "#e6f9ff",
+    "axis": {
+      "gridColor": "skyblue"
+    }
+  },
   "encoding": {
       "x": {
           "field": "Decade",

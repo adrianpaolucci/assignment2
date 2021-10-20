@@ -83,7 +83,7 @@
     "color": {
  "field": "Continent",
  "type": "nominal",
-   "legend": {"orient": "left"},
+   "legend": {"orient": "bottom"},
 
  "scale": {
  "domain": [

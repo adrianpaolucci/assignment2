@@ -4,25 +4,69 @@
   "data": {
     "url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/co2gdpdata.csv"
   },
-  "width": 250,
-  "height": 250,
-  "mark": "point",
+  "width": 500,
+  "height": 500,
+  "mark": "circle",
   "view": {
       "strokeWidth": 0
   },
+  "params": [
+ {
+ "name": "Continent_selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "North America",
+ "South America",
+ "Europe",
+ "Africa",
+ "Asia",
+ "Oceania"
+ ],
+ "labels":[
+ "Show All",
+ "North America",
+ "South America",
+ "Europe",
+ "Africa",
+ "Asia",
+ "Oceania"
+ ],
+ "name": "Continent Selection: "
+ }
+ }
+ ],
+
   "transform": [
-      {"filter": "datum.population > 20000000"}
+      {"filter": "datum.population > 20000000"},
+      {"filter": "Continent_selection == null || datum.Continent == Continent_selection"}
   ],
   "encoding": {
     "x": {
       "field": "co2",
-      "type": "quantitative"
-    },
+      "type": "quantitative",
+      "scale": {
+        "domain": [0,21]
+      }
+      },
     "y": {
       "field": "GDP per capita",
-      "type": "quantitative"
+      "type": "quantitative",
+      "scale": {
+        "domain": [0,60000]
+      }
     },
-    "color": {"field": "GDP per capita", "type": "quantitative", "legend": true},
-    "size": {"field": "population", "type": "quantitative", "legend": null}
+    "color": {"field": "Continent", "type": "nominal"},
+    "opacity": {"value": 0.5},
+    "size": {"field": "population", "type": "quantitative",
+    "scale": {
+      "rangeMin": 0,
+      "rangeMax": 55000,
+      "type": "threshold",
+      "domain": [10000000, 50000000, 100000000, 500000000],
+      "range": [125, 250, 500, 1000, 2000]
+ }
+}
   }
 }

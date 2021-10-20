@@ -4,8 +4,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/co2gdpdata.csv"
   },
-  "width": 600,
-  "height": 500,
+  "width": 700,
+  "height": 450,
   "config": {
     "background": "#e6f9ff",
     "axis": {

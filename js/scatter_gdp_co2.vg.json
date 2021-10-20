@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing body mass and flipper lengths of penguins.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/co2gdpdata.csv"
+  },
+  "width": 250,
+  "height": 250,
+  "mark": "point",
+  "view": {
+      "strokeWidth": 0
+  },
+  "transform": [
+      {"filter": "datum.population > 20000000"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "co2",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative"
+    },
+    "color": {"field": "GDP per capita", "type": "quantitative", "legend": true},
+    "size": {"field": "population", "type": "quantitative", "legend": null}
+  }
+}

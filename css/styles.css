@@ -1,8 +1,8 @@
 #choropleth_map {
-	top:5px;
-	bottom: 5px; 
-	left: 5px;
-	right: 5px;
+	top:20px;
+	bottom: 20px; 
+	left: 20px;
+	right: 20px;
 }
 
 .page {
@@ -15,11 +15,26 @@
 
 .column {
   float: left;
-  width: 30%;
+}
+
+.left{
+  width: 25%;
+  float: left;
+}
+
+.right{
+  width: 25%;
+  float: right;
+}
+
+.middle {
+  width: 50%;
+  float: left;
 }
 
 .row:after {
     content: "";
     display: table;
     clear: both;
+    padding-bottom: 50;
     }

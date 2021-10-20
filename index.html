@@ -13,7 +13,14 @@
 </head>
 <body>
 <div class="page"> 
-<div id="choropleth_map"></div>
+<div class="row">
+  <div class="column">
+  
+  
+  </div>
+  <div class="column">
+  
+  <div id="choropleth_map"></div>
 
 <script type="text/javascript">
 
@@ -21,9 +28,10 @@
   vegaEmbed('#choropleth_map', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-</script>
-<br>
-<div id="scatter_plot"></div>
+</script>  
+    
+      
+    <div id="scatter_plot"></div>
 
 <script type="text/javascript">
 
@@ -31,9 +39,9 @@
   vegaEmbed('#scatter_plot', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-</script>  
-<br>
-<div id="box_plot"></div>
+</script> 
+    
+    <div id="box_plot"></div>
 
 <script type="text/javascript">
 
@@ -41,7 +49,15 @@
   vegaEmbed('#box_plot', spec2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-</script>  
+</script>
+    
+  </div>
+  <div class="column">
+ 
+    
+  </div>
+</div>
+
   </div>
 </body>
 </html>

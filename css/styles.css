@@ -29,7 +29,7 @@
 
 .middle {
   width: 40%;
-  float: center;
+  float: none;
 }
 
 .row:after {

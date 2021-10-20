@@ -8,13 +8,13 @@
       "view": {
           "strokeWidth": 0,
           "step": 50,
-          "discreteWidth": 500
+          "discreteWidth": 600
       },
       "axis": {
           "domain": false
       }
   },
-  "width": 500,
+  "width": 600,
   "height": 300,
   "mark": "rect",
    "config": {

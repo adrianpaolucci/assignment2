@@ -21,6 +21,12 @@
   ],
   "projection": {"type": "equirectangular"},
   "mark": {"type": "geoshape"},
+   "config": {
+    "background": "#e6f9ff",
+    "axis": {
+      "gridColor": "skyblue"
+    }
+  },
   "encoding": {
     "color": {
       "field": "Forestation",

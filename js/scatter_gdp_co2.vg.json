@@ -83,6 +83,8 @@
     "color": {
  "field": "Continent",
  "type": "nominal",
+   "legend": {"orient": "left"},
+
  "scale": {
  "domain": [
  "North America",
@@ -104,6 +106,7 @@
  },
     "opacity": {"value": 0.5},
     "size": {"field": "population", "type": "quantitative",
+    "legend": {"orient": "right"},
     "scale": {
       "rangeMin": 0,
       "rangeMax": 55000,

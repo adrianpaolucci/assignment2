@@ -62,6 +62,7 @@
   "encoding": {
     "x": {
       "field": "co2",
+      "title": "CO2 Emissions",
       "type": "quantitative",
       "scale": {
         "domain": [0,21]
@@ -83,7 +84,7 @@
     "color": {
  "field": "Continent",
  "type": "nominal",
-   "legend": {"orient": "bottom"},
+   "legend": {"orient": "right"},
 
  "scale": {
  "domain": [
@@ -105,8 +106,8 @@
  }
  },
     "opacity": {"value": 0.5},
-    "size": {"field": "population", "type": "quantitative",
-    "legend": {"orient": "right"},
+    "size": {"field": "population", "title": "Population","type": "quantitative",
+    "legend": {"orient": "bottom", "columns": 2},
     "scale": {
       "rangeMin": 0,
       "rangeMax": 55000,

@@ -39,7 +39,7 @@
           "aggregate": "mean",
           "type": "quantitative",
           "legend": {
-              "title": "Temperature Change [°C]"
+              "title": "Change [°C]"
           }
       }
   }

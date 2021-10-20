@@ -65,7 +65,7 @@
       }
     },
     "color": {
-     "scale": {"type": "linear", "range": ["#99ff99", "#003300"]},
+     "scale": {"type": "linear", "range": ["#ffeee6", "#e64d00"]},
      "legend": null,
  "field": "co2",
  "type": "quantitative"},

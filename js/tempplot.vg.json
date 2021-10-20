@@ -18,10 +18,7 @@
   "height": 340,
   "mark": "rect",
    "config": {
-    "background": "#e6f9ff",
-    "axis": {
-      "gridColor": "skyblue"
-    }
+    "background": "#e6f9ff"
   },
   "encoding": {
       "x": {
@@ -37,6 +34,7 @@
       "color": {
           "field": "TempChange",
           "aggregate": "mean",
+          "scale": {"type": "linear", "range": ["#00004d", "#ff0000"]},
           "type": "quantitative",
           "legend": {
               "title": "Change [°C]"

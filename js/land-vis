@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A scatterplot showing body mass and flipper lengths of penguins.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/forestation.csv"
+  },
+  "width": 600,
+  "height": 450,
+  "params": [{
+    "name": "grid",
+    "select": "interval",
+    "bind": "scales"
+  }],
+  "padding": {
+      "left": 50,
+      "right": 50,
+      "bottom": 50 
+  }, 
+  "transform": [
+    {
+      "lookup": "Country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/co2gdpdata.csv"
+        },
+        "key": "Entity",
+        "fields": ["co2"]
+      }
+    }
+  ],
+  "title": "Agricultural vs Urban Land Use",
+  "config": {
+    "background": "#e6f9ff",
+    "axis": {
+      "gridColor": "skyblue"
+    }
+  },
+  "mark": "circle",
+  "view": {
+      "strokeWidth": 0
+  },
+
+  "encoding": {
+    "x": {
+      "field": "Agriculture",
+      "title": "Agricultural Land [% of Total Land]",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0,90]
+      },
+      "axis": {
+        "tickCount": 5
+      }
+      },
+    "y": {
+      "field": "Urban Land",
+      "title": "Urban Land [% of Total Land]",
+      "type": "quantitative",
+      "scale": {
+        "domain": [-0,25],
+        "type": "symlog"
+      },
+      "axis": {
+        "tickCount": 5
+      }
+    },
+    "color": {
+     "scale": {"type": "linear", "range": ["#99ff99", "#003300"]},
+     "legend": null,
+ "field": "co2",
+ "type": "quantitative"},
+
+    "tooltip": [
+      {"field": "Country", "title": "Country"},
+      {"field": "Agriculture", "title": "Agriculture [%]", "format": ".2f"},
+      {"field": "co2", "title": "Urban Land [%]", "format": ".2f"}
+    ],
+    "opacity": {"value": 0.5},
+    "size": {"field": "co2", "title": "CO2 Emissions in kTonnes","type": "quantitative",
+    "legend": {"orient": "bottom"},
+    "scale": {
+      "rangeMin": 0,
+      "rangeMax": 55000,
+      "type": "threshold",
+      "domain": [5, 10, 20, 50],
+      "range": [125, 250, 500, 1000]
+ }}
+}
+  }

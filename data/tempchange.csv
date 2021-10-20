@@ -33,7 +33,7 @@ Australia,1970,0.20
 Australia,1980,-0.20
 Australia,1990,0.40
 Australia,2000,0.50
-Australia,2010,0.00
+Australia,2010,0.60
 Oceania,1950,-0.10
 Oceania,1960,0.00
 Oceania,1970,0.20
@@ -47,14 +47,14 @@ Europe,1970,0.00
 Europe,1980,0.60
 Europe,1990,0.50
 Europe,2000,0.10
-Europe,2010,-0.20
+Europe,2010,0.40
 Asia,1950,0.20
 Asia,1960,-0.10
 Asia,1970,0.00
 Asia,1980,0.60
 Asia,1990,0.20
 Asia,2000,0.60
-Asia,2010,0.40
+Asia,2010,0.60
 North America,1950,-0.50
 North America,1960,-0.20
 North America,1970,0.50
@@ -75,7 +75,7 @@ Australia,1970,0.20
 Australia,1980,-0.20
 Australia,1990,0.40
 Australia,2000,0.50
-Australia,2010,0.00
+Australia,2010,0.60
 Oceania,1950,-0.10
 Oceania,1960,0.00
 Oceania,1970,0.20

@@ -6,6 +6,10 @@
   },
   "width": 680,
   "height": 450,
+  "padding": {
+      "bottom": 50 
+  }, 
+  "title": "CO₂ Emissions vs GDP for Select Countries",
   "config": {
     "background": "#e6f9ff",
     "axis": {

@@ -1,85 +1,85 @@
 ﻿Continent,Decade,TempChange
-Europe,1950,-0.3
-Europe,1960,0.1
-Europe,1970,0
-Europe,1980,0.6
-Europe,1990,0.5
-Europe,2000,0.1
-Europe,2010,-0.2
-Asia,1950,0.2
-Asia,1960,-0.1
-Asia,1970,0
-Asia,1980,0.6
-Asia,1990,0.2
-Asia,2000,0.3
-Asia,2010,-0.4
-North America,1950,-0.5
-North America,1960,-0.2
-North America,1970,0.5
-North America,1980,0.4
-North America,1990,0.3
-North America,2000,0.7
-North America,2010,0.4
-Africa,1950,0.1
-Africa,1960,-0.1
-Africa,1970,0.3
-Africa,1980,0.1
-Africa,1990,0.4
-Africa,2000,0.4
-Africa,2010,-0.2
-Australia,1950,0
-Australia,1960,0.1
-Australia,1970,0.2
-Australia,1980,-0.2
-Australia,1990,0.4
-Australia,2000,0.5
-Australia,2010,0
-Oceania,1950,-0.1
-Oceania,1960,0
-Oceania,1970,0.2
-Oceania,1980,0.3
-Oceania,1990,0.2
-Oceania,2000,0
-Oceania,2010,0.7
-Europe,1950,-0.3
-Europe,1960,0.1
-Europe,1970,0
-Europe,1980,0.6
-Europe,1990,0.5
-Europe,2000,0.1
-Europe,2010,-0.2
-Asia,1950,0.2
-Asia,1960,-0.1
-Asia,1970,0
-Asia,1980,0.6
-Asia,1990,0.2
-Asia,2000,0.3
-Asia,2010,-0.4
-North America,1950,-0.5
-North America,1960,-0.2
-North America,1970,0.5
-North America,1980,0.4
-North America,1990,0.3
-North America,2000,0.7
-North America,2010,0.4
-Africa,1950,0.1
-Africa,1960,-0.1
-Africa,1970,0.3
-Africa,1980,0.1
-Africa,1990,0.4
-Africa,2000,0.4
-Africa,2010,-0.2
-Australia,1950,0
-Australia,1960,0.1
-Australia,1970,0.2
-Australia,1980,-0.2
-Australia,1990,0.4
-Australia,2000,0.5
-Australia,2010,0
-Oceania,1950,-0.1
-Oceania,1960,0
-Oceania,1970,0.2
-Oceania,1980,0.3
-Oceania,1990,0.2
-Oceania,2000,0
-Oceania,2010,0.7
+Europe,1950,-0.30
+Europe,1960,0.10
+Europe,1970,0.00
+Europe,1980,0.60
+Europe,1990,0.50
+Europe,2000,0.10
+Europe,2010,-0.20
+Asia,1950,0.20
+Asia,1960,-0.10
+Asia,1970,0.00
+Asia,1980,0.60
+Asia,1990,0.20
+Asia,2000,0.30
+Asia,2010,-0.40
+North America,1950,-0.50
+North America,1960,-0.20
+North America,1970,0.50
+North America,1980,0.40
+North America,1990,0.30
+North America,2000,0.70
+North America,2010,0.40
+Africa,1950,0.10
+Africa,1960,-0.10
+Africa,1970,0.30
+Africa,1980,0.10
+Africa,1990,0.40
+Africa,2000,0.40
+Africa,2010,-0.20
+Australia,1950,0.00
+Australia,1960,0.10
+Australia,1970,0.20
+Australia,1980,-0.20
+Australia,1990,0.40
+Australia,2000,0.50
+Australia,2010,0.00
+Oceania,1950,-0.10
+Oceania,1960,0.00
+Oceania,1970,0.20
+Oceania,1980,0.30
+Oceania,1990,0.20
+Oceania,2000,0.00
+Oceania,2010,0.70
+Europe,1950,-0.30
+Europe,1960,0.10
+Europe,1970,0.00
+Europe,1980,0.60
+Europe,1990,0.50
+Europe,2000,0.10
+Europe,2010,-0.20
+Asia,1950,0.20
+Asia,1960,-0.10
+Asia,1970,0.00
+Asia,1980,0.60
+Asia,1990,0.20
+Asia,2000,0.30
+Asia,2010,-0.40
+North America,1950,-0.50
+North America,1960,-0.20
+North America,1970,0.50
+North America,1980,0.40
+North America,1990,0.30
+North America,2000,0.70
+North America,2010,0.40
+Africa,1950,0.10
+Africa,1960,-0.10
+Africa,1970,0.30
+Africa,1980,0.10
+Africa,1990,0.40
+Africa,2000,0.40
+Africa,2010,-0.20
+Australia,1950,0.00
+Australia,1960,0.10
+Australia,1970,0.20
+Australia,1980,-0.20
+Australia,1990,0.40
+Australia,2000,0.50
+Australia,2010,0.00
+Oceania,1950,-0.10
+Oceania,1960,0.00
+Oceania,1970,0.20
+Oceania,1980,0.30
+Oceania,1990,0.20
+Oceania,2000,0.00
+Oceania,2010,0.70

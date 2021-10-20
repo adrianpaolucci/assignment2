@@ -8,14 +8,14 @@
       "view": {
           "strokeWidth": 0,
           "step": 50,
-          "discreteWidth": 525
+          "discreteWidth": 625
       },
       "axis": {
           "domain": false
       }
   },
-  "width": 525,
-  "height": 300,
+  "width": 625,
+  "height": 340,
   "mark": "rect",
    "config": {
     "background": "#e6f9ff",

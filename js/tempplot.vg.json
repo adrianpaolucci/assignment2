@@ -1,0 +1,38 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+      "url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/tempchange.csv"
+  },
+  "title": "Temperature change in Degrees Celsius by Continent",
+  "config": {
+      "view": {
+          "strokeWidth": 0,
+          "step": 50,
+          "discreteWidth": 500
+      },
+      "axis": {
+          "domain": false
+      }
+  },
+  "mark": "rect",
+  "encoding": {
+      "x": {
+          "field": "Decade",
+          "type": "ordinal",
+          "title": "Decade"
+      },
+      "y": {
+          "field": "Continent",
+          "type": "ordinal",
+          "title": "Continent"
+      },
+      "color": {
+          "field": "TempChange",
+          "aggregate": "mean",
+          "type": "quantitative",
+          "legend": {
+              "title": null
+          }
+      }
+  }
+}

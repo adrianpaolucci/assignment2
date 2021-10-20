@@ -17,15 +17,8 @@
 
 .column {
   float: left;
-  width: 32%;
+  width: 30%;
 }
-
- .column2 {
-    align-content: center;
-    float: right;
-    width: 35%;
-  
-    }
 
 .row:after {
     content: "";

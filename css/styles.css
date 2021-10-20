@@ -41,7 +41,17 @@ p {
   
 }
 
-h1,h4,h3 {
+.forestation {
+  color: #008000;
+}
+
+.Emissions  {
+  color: #6666ff;
+}
+
+
+
+h1,h4,h2 {
   text-align: center;
 }
 .row:after {

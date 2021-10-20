@@ -3,7 +3,7 @@
   "data": {
       "url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/tempchange.csv"
   },
-  "title": "Temperature change in Degrees Celsius by Continent",
+  "title": "Temperature change [°C] by Continent",
   "config": {
       "view": {
           "strokeWidth": 0,
@@ -31,7 +31,7 @@
           "aggregate": "mean",
           "type": "quantitative",
           "legend": {
-              "title": null
+              "title": "Temperature Change [°C]"
           }
       }
   }

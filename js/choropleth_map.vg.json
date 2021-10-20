@@ -40,7 +40,7 @@
       "field": "Forestation",
       "title": "% Forestation",
       "type": "quantitative",
-      "scale": {"type": "linear", "range": ["#e6ffe6", "green"]}
+      "scale": {"type": "linear", "range": ["#ffeee6", "#ff5500"]}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},

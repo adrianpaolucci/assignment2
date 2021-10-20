@@ -6,3 +6,29 @@
 	/*height: 1000px;
 	width: 800px;*/
 }
+
+.page {
+    width: 1000;
+    margin: auto;
+    padding: 60px;
+    padding-tdop: 10px;
+    background-color: #FAEBD7;
+  font-size: 20px;}
+
+.column {
+    float: left;
+    width: 60%;
+    }
+
+ .column2 {
+    align-content: center;
+    float: right;
+    width: 35%;
+  
+    }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }

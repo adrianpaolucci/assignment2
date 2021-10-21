@@ -3,7 +3,7 @@
   "data": {
       "url": "https://raw.githubusercontent.com/adrianpaolucci/assignment2/main/data/tempchange.csv"
   },
-  "title": "Temperature change [°C] by Continent",
+  "title": ["Temperature change [°C] by Continent","------------------------------------","Hover for more information"],
   "config": {
       "view": {
           "strokeWidth": 0,
@@ -39,6 +39,10 @@
           "legend": {
               "title": "Change [°C]"
           }
-      }
+      },
+      "tooltip": [
+          {"field": "Continent"},
+          {"field": "TempChange", "title": "Change [°C]"}
+      ]
   }
 }

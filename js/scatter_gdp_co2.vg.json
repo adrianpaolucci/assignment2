@@ -162,6 +162,8 @@
                 "align": "center",
                 "baseline": "middle",
                 "dy": 25,
+                "fontSize": 12,
+                "fontWeight": "bold",
                 "dx": -10
             },
             "transform": [

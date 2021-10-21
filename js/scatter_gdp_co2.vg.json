@@ -140,7 +140,9 @@
  }
  },
     "tooltip": [
-        {"field": "Entity", "title": "Country"}
+        {"field": "Entity", "title": "Country"},
+        {"field": "co2", "title": "CO2 Emissions [kTonnes]"},
+        {"field": "GDP per capita", "title": "GDP [US$]"}
     ],
     "opacity": {"value": 0.5},
     "size": {"field": "population", "title": "Population","type": "quantitative",

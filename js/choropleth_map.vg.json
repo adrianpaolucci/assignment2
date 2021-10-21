@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Forestation [% of land] by Country",
+  "title": ["Forestation [% of land] by Country","---------------------------------------","Hover for more information"],
   "width": 720,
   "height": 400,
    "config": {

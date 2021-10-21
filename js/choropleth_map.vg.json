@@ -73,7 +73,7 @@
         },
        
             "transform": [
-                {"filter": "datum.Country == 'China'|| datum.Country == 'United States'||datum.Country == 'India'||datum.Country == 'France'||datum.Country == 'Indonesia'||datum.Country == 'Russia'"}
+                {"filter": "datum.Country == 'China'|| datum.Country == 'United States'||datum.Country == 'India'||datum.Country == 'France'||datum.Country == 'Indonesia'||datum.Country == 'Russian Federation'"}
             ],
             "encoding": {
                 "text": {"field": "Country", "type": "nominal", "title": "Country"},

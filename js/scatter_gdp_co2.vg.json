@@ -9,7 +9,7 @@
   "padding": {
       "bottom": 50 
   }, 
-  "title": "CO₂ Emissions vs GDP for Select Countries",
+  "title": ["CO₂ Emissions vs GDP for Select Countries","-------------------------------------------","Use controls to filter bubbles"],
   "config": {
     "background": "#e6f9ff",
     "axis": {

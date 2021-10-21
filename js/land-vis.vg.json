@@ -27,7 +27,7 @@
       "bottom": 50 
   }, 
   
-  "title": ["Agricultural vs Urban Land Use","---------------------------------------------","Zoom and pan to see densities"],
+  "title": ["Agricultural vs Urban Land Use","---------------------------------------------","Zoom and pan to investigate data density"],
   "config": {
     "background": "#e6f9ff",
     "axis": {

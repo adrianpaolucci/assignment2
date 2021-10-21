@@ -16,10 +16,33 @@
       "gridColor": "skyblue"
     }
   },
-  "mark": "circle",
-  "view": {
-      "strokeWidth": 0
-  },
+    "transform": [
+      {"filter": "datum.population > 20000000"},
+      {"filter": "Continent_selection == null || datum.Continent == Continent_selection"},
+      {"filter": "datum.population > Population_min"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "co2",
+      "title": "CO2 Emissions",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0,21]
+      },
+      "axis": {
+        "tickCount": 5
+      }
+      },
+    "y": {
+      "field": "GDP per capita",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0,60000]
+      },
+      "axis": {
+        "tickCount": 5
+      }
+    }},
   "params": [
  {
  "name": "Continent_selection",
@@ -57,6 +80,13 @@
  }
  }
  ],
+  "layer": [
+      {
+  "mark": "circle",
+  "view": {
+      "strokeWidth": 0
+  },
+  
 
   "transform": [
       {"filter": "datum.population > 20000000"},
@@ -109,6 +139,9 @@
  ]
  }
  },
+    "tooltip": [
+        {"field": "Entity", "title": "Country"}
+    ],
     "opacity": {"value": 0.5},
     "size": {"field": "population", "title": "Population","type": "quantitative",
     "legend": {"orient": "bottom", "columns": 2},
@@ -121,4 +154,22 @@
  }
 }
   }
+      },
+      {"mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "middle",
+                "dy": 25,
+                "dx": -10
+            },
+            "transform": [
+                {"filter": "datum.Entity == 'China'|| datum.Entity == 'United States'||datum.Entity == 'India'||datum.Entity == 'France'||datum.Entity == 'Indonesia'||datum.Entity == 'Russia'"}
+            ],
+            "encoding": {
+                "text": {"field": "Entity", "type": "nominal", "title": "Country"},
+                "color": {"value": "black"}
+            }
+        }
+
+      ]
 }

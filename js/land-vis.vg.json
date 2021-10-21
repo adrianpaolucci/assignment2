@@ -10,13 +10,34 @@
     "name": "grid",
     "select": "interval",
     "bind": "scales"
-  }],
+  },
+  {"name": "co2_min",
+ "value": 0,
+ "bind": {
+ "input": "range",
+ "min": 0,
+ "max": 50,
+ "step": 2,
+ "name": "Minimum CO2 Emissions: "
+ }
+ }],
   "padding": {
       "left": 50,
       "right": 50,
       "bottom": 50 
   }, 
-  "transform": [
+  
+  "title": "Agricultural vs Urban Land Use",
+  "config": {
+    "background": "#e6f9ff",
+    "axis": {
+      "gridColor": "skyblue"
+    }
+  },
+
+  "layer": [
+      {
+"transform": [
     {
       "lookup": "Country",
       "from": {
@@ -26,15 +47,11 @@
         "key": "Entity",
         "fields": ["co2"]
       }
+    },
+    {
+        "filter": "datum.co2 > co2_min"
     }
   ],
-  "title": "Agricultural vs Urban Land Use",
-  "config": {
-    "background": "#e6f9ff",
-    "axis": {
-      "gridColor": "skyblue"
-    }
-  },
   "mark": "circle",
   "view": {
       "strokeWidth": 0
@@ -72,8 +89,7 @@
 
     "tooltip": [
       {"field": "Country", "title": "Country"},
-      {"field": "Agriculture", "title": "Agriculture [%]", "format": ".2f"},
-      {"field": "co2", "title": "Urban Land [%]", "format": ".2f"}
+      {"field": "co2", "title": "CO2 Emissions in kTonnes", "format": ".2f"}
     ],
     "opacity": {"value": 0.5},
     "size": {"field": "co2", "title": "CO2 Emissions in kTonnes","type": "quantitative",
@@ -85,5 +101,9 @@
       "domain": [5, 10, 20, 50],
       "range": [125, 250, 500, 1000]
  }}
-}
+}}
+ 
+  
+  ]
   }
+
